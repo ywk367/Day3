@@ -1,0 +1,22 @@
+inVal = input()
+
+if inVal.isdigit() == True :
+    n = int(inVal)
+    idx = 1
+
+    strVal = ""
+
+    while idx <= n:
+      strVal = strVal + str(idx)
+      idx = idx + 1
+    
+    print(strVal, type(strVal))
+
+    if type(strVal) == str :
+      print("String")
+    elif type(strVal) == int :
+      print("Integer")
+    else :
+      print("Others")
+else :
+    print("입력이 숫자로만 이루어져 있습니다.")
